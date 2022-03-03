@@ -46,7 +46,7 @@ const Edituser = () => {
     <div className=" div my-5 py-2" >
       {Editclick ?
         <div >
-          <div className='tabdiv border border-dark my-3 py-3 px-2 ' >
+          <div className='editDiv border border-dark my-3 py-3 px-2 ' >
             <h3 className='text-center ' >Edit user Details</h3>
             <label >Key</label>
             <input type="text" name='key' onChange={(e) => onValueChange(e)} value={key} className="form-control" aria-describedby="passwordHelpBlock" />
@@ -57,7 +57,7 @@ const Edituser = () => {
           <button className="btn btn-sm btn-outline-danger  mx-3" onClick={() => BackHome()}>Cancel</button>
         </div>
         :
-        <div className='border tabdiv border-dark  my-2 py-3 px-3' >
+        <div className='border editDiv border-dark  my-2 py-3 px-3' >
           <h3 className='text-center '>User Data</h3>
           <h4 className="my-2">Key : {key}</h4><br />
           <h4 >Value: {value}</h4><br />
