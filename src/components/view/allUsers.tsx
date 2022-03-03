@@ -2,13 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { getUsers,deleteUser } from '../service/api'
 import { Link } from 'react-router-dom'
 import { userProp } from '../service/userProptype'
-
+import '../styles/allUsers.scss'
 const Allusers = () => {
- const styles={
-    width:'40%',
-    height:'50%',
-    margin:'5px',
-  }
+
 const [users,setUsers]=useState<userProp[]>([]);
 useEffect(()=>
   {
@@ -28,9 +24,9 @@ const deleteUserData=async(user:userProp)=>{
 }
 
   return (
-    <div className="container " style={styles}>
-      <h3 className="text-center">All users</h3>
-   <table className=" table table-bordered my-4 table-primary" >
+    <div className="tabelDiv" >
+      <h3 className="text-center boldtext my-3">All users</h3>
+   <table className=" table tabstyles table-bordered my-3 table-primary " >
   <thead className='table-dark'>
     <tr>
       <th scope="col">Key</th>

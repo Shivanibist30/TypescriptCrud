@@ -2,14 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { userUpdate } from '../service/api'
 import { useNavigate, useParams, } from 'react-router-dom'
 import axios from 'axios';
-const styles = {
-  display: 'relative',
-  width: '400px',
-  height: "50%",
-  left: '10px',
-  background: '#d1e7dd',
-}
-
+import '../styles/editUser.scss'
 
 const Edituser = () => {
   const initial = {
@@ -50,10 +43,10 @@ const Edituser = () => {
   }
 
   return (
-    <div className="container my-5 py-2" >
+    <div className=" div my-5 py-2" >
       {Editclick ?
         <div >
-          <div className='border border-dark my-3  py-3 px-2 ' style={styles}>
+          <div className='tabdiv border border-dark my-3 py-3 px-2 ' >
             <h3 className='text-center ' >Edit user Details</h3>
             <label >Key</label>
             <input type="text" name='key' onChange={(e) => onValueChange(e)} value={key} className="form-control" aria-describedby="passwordHelpBlock" />
@@ -64,8 +57,8 @@ const Edituser = () => {
           <button className="btn btn-sm btn-outline-danger  mx-3" onClick={() => BackHome()}>Cancel</button>
         </div>
         :
-        <div className='border border-dark  my-2  px-3' style={styles}>
-          <h3 className='text-center text-white'>User Data</h3>
+        <div className='border tabdiv border-dark  my-2 py-3 px-3' >
+          <h3 className='text-center '>User Data</h3>
           <h4 className="my-2">Key : {key}</h4><br />
           <h4 >Value: {value}</h4><br />
         </div>
