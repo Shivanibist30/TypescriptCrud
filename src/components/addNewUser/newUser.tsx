@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Adduser } from '../service/api'
 import {useNavigate} from 'react-router-dom'
-import '../styles/newUser.scss'
+import './newUser.scss'
 
 
 const Newusers = () => {

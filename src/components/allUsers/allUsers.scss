@@ -1,5 +1,4 @@
-@import 'variables';
-@import 'allMixin';
+
 .boldtext{
     font-weight: bold;
     font-size: 45px;
@@ -11,8 +10,8 @@
       text-align: center;
     }
   }
-@include div;
-  // .tabelDiv{
-  //     display: grid;
-  //     justify-content: center;
-  // }
+
+.tabelDiv{
+      display: grid;
+      justify-content: center;
+}

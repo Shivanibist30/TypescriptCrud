@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { userUpdate } from '../service/api'
 import { useNavigate, useParams, } from 'react-router-dom'
 import axios from 'axios';
-import '../styles/editUser.scss'
+import './editUser.scss'
 
 const Edituser = () => {
   const initial = {

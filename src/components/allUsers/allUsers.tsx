@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { getUsers,deleteUser } from '../service/api'
 import { Link } from 'react-router-dom'
 import { userProp } from '../service/userProptype'
-import '../styles/allUsers.scss'
+import './allUsers.scss'
+
 const Allusers = () => {
 
 const [users,setUsers]=useState<userProp[]>([]);
@@ -24,7 +25,7 @@ const deleteUserData=async(user:userProp)=>{
 }
 
   return (
-    <div className="tabelDiv" >
+    <div className="div" >
       <h3 className="text-center boldtext my-3">All users</h3>
    <table className=" table tabstyles table-bordered my-3 table-primary " >
   <thead className='table-dark'>

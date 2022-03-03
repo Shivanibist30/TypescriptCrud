@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Newusers from './components/view/newUser';
-import Allusers from './components/view/allUsers';
-import Navbar from './components/view/Navbar';
-import Edituser from './components/view/editUser';
+import Newusers from './components/addNewUser/newUser';
+import Allusers from './components/allUsers/allUsers';
+import Navbar from './components/Navbar/Navbar';
+import Edituser from './components/editUsers/editUser';
 
 
 function App() {
