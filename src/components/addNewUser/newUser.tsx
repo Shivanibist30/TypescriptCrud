@@ -30,7 +30,7 @@ const Newusers = () => {
     <input type="text" name='key' onChange={(e)=>onValueChange(e)} value={key} className="form-control" aria-describedby="passwordHelpBlock"/>
     <label  >Value</label>
     <input type="text" name='value' onChange={(e)=>onValueChange(e)} value={value} className="form-control" aria-describedby="passwordHelpBlock"/>
-    <button className='my-2 btn btn-sm btn-outline-primary' onClick={()=>addDetail()}>Add User</button> 
+    <button name='addUser' className='my-2 btn btn-sm btn-outline-primary' onClick={()=>addDetail()}>Add User</button> 
     <button className="btn btn-sm btn-outline-danger  mx-3" onClick={() => BackHome()}>Cancel</button>
     </div>
     </div>

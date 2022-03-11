@@ -26,7 +26,7 @@ const deleteUserData=async(user:userProp)=>{
 
   return (
     <div className="div" >
-      <h3 className="text-center boldtext my-3">All users</h3>
+      <h3 className="text-center expect.extend({toMatchImageSnapshot}); boldtext my-3">ALL USERS</h3>
    <table className=" table tabstyles table-bordered my-3 table-primary " >
   <thead className='table-dark'>
     <tr>
@@ -43,7 +43,7 @@ const deleteUserData=async(user:userProp)=>{
           <td>{user.value}</td>
           {/* <td> */}
           <td><Link to={`editusers/${user.id}`}><button className='btn btn-sm btn-outline-primary' >View</button></Link> 
-          <button className='btn btn-sm btn-outline-danger mx-3' onClick={()=>{deleteUserData(user)}}>Delete</button></td> 
+          <button className='btn btn-sm btn-outline-danger mx-3' name='delete' onClick={()=>{deleteUserData(user)}}>Delete</button></td> 
           </tr>)
       })
     }
